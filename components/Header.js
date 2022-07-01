@@ -69,33 +69,25 @@ const Header = ({ navBarTitle, fullWidth }) => {
         <div className="flex items-center">
           <Link href="/">
             <a aria-label={BLOG.title}>
-              <div className="h-6">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="24"
-                    height="24"
-                    className="fill-current text-black dark:text-white"
-                  />
-                  <rect width="24" height="24" fill="url(#paint0_radial)" />
+              <div className="h-3">
+                <svg width="40" height="40" viewBox="-100 -100 200 200">
                   <defs>
-                    <radialGradient
-                      id="paint0_radial"
-                      cx="0"
-                      cy="0"
-                      r="1"
-                      gradientUnits="userSpaceOnUse"
-                      gradientTransform="rotate(45) scale(39.598)"
-                    >
-                      <stop stopColor="#CFCFCF" stopOpacity="0.6" />
-                      <stop offset="1" stopColor="#E9E9E9" stopOpacity="0" />
-                    </radialGradient>
+                    <path id="branch" d="
+                        M 0 0 L 0 -90
+                        M 0 -20 L 20 -34
+                        M 0 -20 L -20 -34
+                        M 0 -40 L 20 -54
+                        M 0 -40 L -20 -54
+                        M 0 -60 L 20 -74
+                        M 0 -60 L -20 -74" stroke="#E5C39C" stroke-width="5"></path>
                   </defs>
+
+                  <use href="#branch"></use>
+                  <use href="#branch" transform="rotate(60)"></use>
+                  <use href="#branch" transform="rotate(120)"></use>
+                  <use href="#branch" transform="rotate(180)"></use>
+                  <use href="#branch" transform="rotate(240)"></use>
+                  <use href="#branch" transform="rotate(300)"></use>
                 </svg>
               </div>
             </a>
