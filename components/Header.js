@@ -79,7 +79,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
                         M 0 -40 L 20 -54
                         M 0 -40 L -20 -54
                         M 0 -60 L 20 -74
-                        M 0 -60 L -20 -74" stroke="#E5C39C" stroke-width="5"></path>
+                        M 0 -60 L -20 -74" stroke="#E5C39C" strokeWidth="5"></path>
                   </defs>
 
                   <use href="#branch"></use>
