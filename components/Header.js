@@ -69,7 +69,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
         <div className="flex items-center">
           <Link href="/">
             <a aria-label={BLOG.title}>
-              <div className="h-3">
+              <div className="h-1">
                 <svg width="40" height="40" viewBox="-100 -100 200 200">
                   <defs>
                     <path id="branch" d="
